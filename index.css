@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   position: relative; 
+}
+
+
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+         background-color: rgb(20, 79, 59);
+         box-shadow: 0 7px 10px rgba(0, 0,0,0.3);
+
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    align-items: center;
+
+    
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+#input-search{
+    max-width: 400px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 0;
+    color: #333;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: transform 0.1s ease-in-out;
+    background-color:  rgb(44, 191, 142);
+    margin-left: 5px;
+}
+.blog-card h4{
+    color: red;
+}
+button:active{
+    transform: translateY(-5px);
+    color: rgb(253, 3, 3);
+    
+}
+#bolg-container{
+    padding: 2rem 0;
+   
+}
+.blog-card{
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 4px 4px 10px   rgb(0, 0, 0);
+    transition:  transform ease-in 0.3s;
+    
+}
+.main12{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+h3{
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    font-size: 70px;
+    color: rgb(179, 52, 52);
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+
+}
+.blog-card:hover{
+    box-shadow: 4px 4px 10px  rgb(85, 0, 255);
+    transform: translateY(-10px);
+}
+.blog-card h2{
+    color: rgb(27, 26, 26);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.blog-card p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+@media(max-width:500px ) {
+    nav{
+        padding: 0 20px;
+    }
+    .logo{
+        color: white;
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+    }
+    #input-search{
+        width: 150px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border-width: 0;
+        color: #333;
+    }
+    .blog-card{
+        width: 100%;
+    }
+}
