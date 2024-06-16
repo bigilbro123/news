@@ -1,3 +1,5 @@
+
+alert("IT DOES NOT WORK BECAUSE OF APIs restriction")
 const apikey = '1a1e9fad5ce44a1b9573269bdcd2ab50';
 const bolgcontainer = document.getElementById('bolg-container');
 
